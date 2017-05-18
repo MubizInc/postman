@@ -1,0 +1,188 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mubiz-bo-openbazaar",
+		"_postman_id": "a1d409cf-4da2-7f0d-2315-dab7172502f4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "general",
+			"description": "",
+			"item": [
+				{
+					"name": "Contracts",
+					"request": {
+						"url": "{{URI}}/contracts?guid=39aee99144c2b52325bc10f3c70df959bc0d1186&contracthash=c4d46b13ee2c2e4220b00a62d52bdb2e8940ca95",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "parameters:\nguid=39aee99144c2b52325bc10f3c70df959bc0d1186&\ncontracthash=c4d46b13ee2c2e4220b00a62d52bdb2e8940ca95"
+					},
+					"response": []
+				},
+				{
+					"name": "Followers",
+					"request": {
+						"url": "{{URI}}/get_followers?guid=39aee99144c2b52325bc10f3c70df959bc0d1186",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "paramaters:\nguid=39aee99144c2b52325bc10f3c70df959bc0d1186"
+					},
+					"response": []
+				},
+				{
+					"name": "Following",
+					"request": {
+						"url": "{{URI}}/get_following?guid=39aee99144c2b52325bc10f3c70df959bc0d1186",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "parameters:\nguid=39aee99144c2b52325bc10f3c70df959bc0d1186"
+					},
+					"response": []
+				},
+				{
+					"name": "Image",
+					"request": {
+						"url": "{{URI}}/get_image?hash=bc9bd3095c3fa7e737cebd08feaf8915c697d020&guid=f354dd0db18c8602f2b3e9dc69f3c8b9f6bc2e0f",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Parameters:\nhash=bc9bd3095c3fa7e737cebd08feaf8915c697d020\nguid=f354dd0db18c8602f2b3e9dc69f3c8b9f6bc2e0f"
+					},
+					"response": []
+				},
+				{
+					"name": "Listings",
+					"request": {
+						"url": "{{URI}}/get_listings?guid=39aee99144c2b52325bc10f3c70df959bc0d1186",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "parameters:\nguid=39aee99144c2b52325bc10f3c70df959bc0d1186"
+					},
+					"response": []
+				},
+				{
+					"name": "Moderators_list",
+					"request": {
+						"url": "{{URI}}/get_moderators",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Profile",
+					"request": {
+						"url": "{{URI}}/profile?guid=39aee99144c2b52325bc10f3c70df959bc0d1186",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "parameter:\nguid=39aee99144c2b52325bc10f3c70df959bc0d1186"
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"url": "{{URI}}/search?keyword=openbazaar",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "parameters:\nkeyword=openbazaar"
+					},
+					"response": []
+				},
+				{
+					"name": "Vendors",
+					"request": {
+						"url": "{{URI}}/get_vendors",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "statistics",
+			"description": "",
+			"item": [
+				{
+					"name": "Figures",
+					"request": {
+						"url": "{{URI}}/statistics/get_figures",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Keywords",
+					"request": {
+						"url": "{{URI}}/statistics/get_keywords",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Main_figures",
+					"request": {
+						"url": "{{URI}}/statistics/get_main_figures",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Top_keywords",
+					"request": {
+						"url": "{{URI}}/statistics/get_topkeywords",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Top_vendors",
+					"request": {
+						"url": "{{URI}}/statistics/get_topvendors",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Numbers_products",
+					"request": {
+						"url": "{{URI}}/statistics/get_listings",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Vendors with products\r\n"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

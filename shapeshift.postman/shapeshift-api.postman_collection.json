@@ -1,0 +1,143 @@
+{
+	"variables": [],
+	"info": {
+		"name": "shapeshift-api",
+		"_postman_id": "d87d8614-970b-6bd3-d648-987f031f42d4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All_rate",
+			"request": {
+				"url": "{{URI}}/rate",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Rate",
+			"request": {
+				"url": "{{URI}}/rate/btc_ltc",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "pair = btc_ltc"
+			},
+			"response": []
+		},
+		{
+			"name": "Limit_deposit",
+			"request": {
+				"url": "{{URI}}/limit/btc_ltc",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "[pair] is any valid coin pair such as btc_ltc or ltc_btc"
+			},
+			"response": []
+		},
+		{
+			"name": "Market_info",
+			"request": {
+				"url": "{{URI}}/marketinfo/btc_ltc",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "[pair] is any valid coin pair such as btc_ltc or ltc_btc"
+			},
+			"response": []
+		},
+		{
+			"name": "All_market_info",
+			"request": {
+				"url": "{{URI}}/marketinfo",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "All_recent_transaction ",
+			"request": {
+				"url": "{{URI}}/recenttx/50",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "[max] is an optional maximum number of transactions to return.\r\nIf [max] is not specified this will return 5 transactions.\r\nAlso, [max] must be a number between 1 and 50 (inclusive)."
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction_stat",
+			"request": {
+				"url": "{{URI}}/txStat/[adress]",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "[adress] is a required paramter"
+			},
+			"response": []
+		},
+		{
+			"name": "Coins",
+			"request": {
+				"url": "{{URI}}/getcoins",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Time-remaining",
+			"request": {
+				"url": "{{URI}}/timeremaining/[adress]",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "[adress] is a required paramter"
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction_by_api_key",
+			"request": {
+				"url": "{{URI}}/txbyapikey/[apiKey]",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "[apiKey] is a required parameter"
+			},
+			"response": []
+		},
+		{
+			"name": "Transaction_by_address",
+			"request": {
+				"url": "{{URI}}/txbyaddress/[adress]/[apiKey]",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "[address] is a required parameter\n[apiKey] is a required parameter"
+			},
+			"response": []
+		},
+		{
+			"name": "Validate_address",
+			"request": {
+				"url": "{{URI}}/validateAddress/[address]/[coinSymbol]",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "[address] is required\n[coinSymbol] is required"
+			},
+			"response": []
+		}
+	]
+}

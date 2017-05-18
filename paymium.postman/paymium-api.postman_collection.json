@@ -1,0 +1,61 @@
+{
+	"variables": [],
+	"info": {
+		"name": "paymium-api",
+		"_postman_id": "fb7d8ebf-e13e-81ae-fc5c-979e06e1a35a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ticker",
+			"request": {
+				"url": "{{URI}}/data/eur/ticker",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Countries",
+			"request": {
+				"url": "{{URI}}/countries",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Trades\t",
+			"request": {
+				"url": "{{URI}}/data/eur/trades\t",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Depth",
+			"request": {
+				"url": "{{URI}}/data/eur/depth",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

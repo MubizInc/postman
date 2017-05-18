@@ -1,0 +1,183 @@
+{
+	"variables": [],
+	"info": {
+		"name": "blockstack-api",
+		"_postman_id": "683c53f8-65a7-ddf6-87da-83fdc15e228a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "blockchain",
+			"description": "",
+			"item": [
+				{
+					"name": "Addresses",
+					"request": {
+						"url": "{{URI}}/addresses/bitcoin/1Q3K7ymNVycu3TQoTDUaty8Q5fUVB3feEQ",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "\nblockchain = bitcoin\naddress = 1Q3K7ymNVycu3TQoTDUaty8Q5fUVB3feEQ"
+					},
+					"response": []
+				},
+				{
+					"name": "Consensus",
+					"request": {
+						"url": "{{URI}}/blockchains/bitcoin/consensus",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "blochain = bitcoin"
+					},
+					"response": []
+				},
+				{
+					"name": "Pending",
+					"request": {
+						"url": "{{URI}}/blockchains/bitcoin/pending",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "blochain = bitcoin"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "names",
+			"description": "",
+			"item": [
+				{
+					"name": "All_names",
+					"request": {
+						"url": "{{URI}}/names?page=0",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "parameter : \npage = 0\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Info",
+					"request": {
+						"url": "{{URI}}/names/muneeb.id",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "History",
+					"request": {
+						"url": "{{URI}}/names/muneeb.id/history",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Zone_file",
+					"request": {
+						"url": "{{URI}}/names/muneeb.id/zonefile",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "namespaces",
+			"description": "",
+			"item": [
+				{
+					"name": "All",
+					"request": {
+						"url": "{{URI}}/namespaces",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Names",
+					"request": {
+						"url": "{{URI}}/namespaces/id/names?page=0",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Price_namespace",
+					"request": {
+						"url": "{{URI}}/prices/namespaces/id",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "tld = id\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Prices_name",
+					"request": {
+						"url": "{{URI}}/prices/names/muneeb.id",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "name = muneeb.id\n"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ping",
+			"request": {
+				"url": "{{URI}}/ping",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"url": "https://core.blockstack.org/v2/users/fredwilson",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"url": "{{URI}}/search?query=bitcoin",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "parameter : \nquery = bitcoin\n"
+			},
+			"response": []
+		}
+	]
+}

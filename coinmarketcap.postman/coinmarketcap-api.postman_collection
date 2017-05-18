@@ -1,0 +1,117 @@
+{
+	"variables": [],
+	"info": {
+		"name": "coin-market-cap-api",
+		"_postman_id": "f447b8c2-5519-6f7c-9d9e-5046ab06dc6c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "global",
+			"description": "",
+			"item": [
+				{
+					"name": "Global",
+					"request": {
+						"url": "{{URI}}/global",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Global_convert",
+					"request": {
+						"url": "{{URI}}/global?convert=gbp",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "The result is same without 'convert'\n\noptional parameter!:\nconvert = GBP or gbp"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ticker",
+			"description": "",
+			"item": [
+				{
+					"name": "Ticker",
+					"request": {
+						"url": "{{URI}}/ticker",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Ticker_limit",
+					"request": {
+						"url": "{{URI}}/ticker/?limit=10",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "You can limit the number of results\nOptionnal parameter :\nlimit = 10  (int)\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Ticker_limit_convert",
+					"request": {
+						"url": "{{URI}}/ticker/?limit=10&convert=gbp",
+						"method": "GET",
+						"header": [
+							{
+								"key": "convert",
+								"value": "gbp",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "You can limit the number of results and convert into an other currency\n\nOptionnal parameters :\nlimit = 10\t\t\t\t(int)\nconvert = GBP or gbp\t(string)"
+					},
+					"response": []
+				},
+				{
+					"name": "Ticker_convert",
+					"request": {
+						"url": "{{URI}}/ticker/?convert=GBP",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "You convert to an other currency\nOptionnal parameter :\nconvert = GBP or gbp (string)\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Ticker_id",
+					"request": {
+						"url": "{{URI}}/ticker/ethereum",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "id = ethereum"
+					},
+					"response": []
+				},
+				{
+					"name": "Ticker_id_convert",
+					"request": {
+						"url": "{{URI}}/ticker/ethereum?convert=gbp",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "id = ethereum\n\nYou can convert to an other currency\noptional parameter:\n\nconvert = GBP or gbp\t(string)"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
