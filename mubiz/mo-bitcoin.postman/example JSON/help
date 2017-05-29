@@ -1,0 +1,66 @@
+== Blockchain ==
+getbestblockhash
+getblock "hash" ( verbose )
+getblockchaininfo
+getblockcount
+getblockhash index
+getblockheader "hash" ( verbose )
+getchaintips
+getdifficulty
+getmempoolancestors txid (verbose)
+getmempooldescendants txid (verbose)
+getmempoolentry txid
+getmempoolinfo
+getrawmempool ( verbose )
+gettxout "txid" n ( includemempool )
+gettxoutproof ["txid",...] ( blockhash )
+gettxoutsetinfo
+verifychain ( checklevel numblocks )
+verifytxoutproof "proof"
+
+== Control ==
+getinfo
+help ( "command" )
+stop
+
+== Generating ==
+generate numblocks ( maxtries )
+generatetoaddress numblocks address (maxtries)
+
+== Mining ==
+getblocktemplate ( TemplateRequest )
+getmininginfo
+getnetworkhashps ( blocks height )
+prioritisetransaction <txid> <priority delta> <fee delta>
+submitblock "hexdata" ( "jsonparametersobject" )
+
+== Network ==
+addnode "node" "add|remove|onetry"
+clearbanned
+disconnectnode "node" 
+getaddednodeinfo dummy ( "node" )
+getconnectioncount
+getnettotals
+getnetworkinfo
+getpeerinfo
+listbanned
+ping
+setban "ip(/netmask)" "add|remove" (bantime) (absolute)
+
+== Rawtransactions ==
+createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime )
+decoderawtransaction "hexstring"
+decodescript "hex"
+getrawtransaction "txid" ( verbose )
+sendrawtransaction "hexstring" ( allowhighfees )
+signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )
+
+== Util ==
+createmultisig nrequired ["key",...]
+estimatefee nblocks
+estimatepriority nblocks
+estimatesmartfee nblocks
+estimatesmartpriority nblocks
+signmessagewithprivkey "privkey" "message"
+validateaddress "bitcoinaddress"
+verifymessage "bitcoinaddress" "signature" "message"

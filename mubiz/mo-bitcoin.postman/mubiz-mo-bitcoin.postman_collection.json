@@ -1,0 +1,304 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mubiz-mo-bitcoin",
+		"_postman_id": "1810655c-1533-85e9-c5c8-6b0b2ed4bc05",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "explorer_bitcoin_blockchain",
+			"description": "",
+			"item": [
+				{
+					"name": "Account",
+					"request": {
+						"url": "{{URI}}/account?address=17LHaecYMc9682FSG911f2Vk574NmUKUWR",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Address",
+					"request": {
+						"url": "{{URI}}/address/17LHaecYMc9682FSG911f2Vk574NmUKUWR/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "bitcoin_adress = 17LHaecYMc9682FSG911f2Vk574NmUKUWR"
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction",
+					"request": {
+						"url": "{{URI}}/transaction/02e76912f9e2f2e37c2d0d0f16455a157c81e100c3f71d7d20638530c624bbff/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "bitcoin_trx = 02e76912f9e2f2e37c2d0d0f16455a157c81e100c3f71d7d20638530c624bbff"
+					},
+					"response": []
+				},
+				{
+					"name": "Blocks",
+					"request": {
+						"url": "{{URI}}/blocks",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Block_mo",
+					"request": {
+						"url": "{{URI}}/block/466047/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "bitcoin_block = 466047"
+					},
+					"response": []
+				},
+				{
+					"name": "Block_bo",
+					"request": {
+						"url": "{{URI}}/block?index=55",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "bitcoin_block = 466047"
+					},
+					"response": []
+				},
+				{
+					"name": "Block_hash",
+					"request": {
+						"url": "{{URI}}/block_hash/000000000000000000c52167138091c472aa62ac724a647f9ae51beea7254138/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "block_hach = 000000000000000000c52167138091c472aa62ac724a647f9ae51beea7254138"
+					},
+					"response": []
+				},
+				{
+					"name": "Block_index",
+					"request": {
+						"url": "{{URI}}/block_index/17/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "bitcoin_block = 466047"
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction_id_bo",
+					"request": {
+						"url": "{{URI}}/transaction?id=02e76912f9e2f2e37c2d0d0f16455a157c81e100c3f71d7d20638530c624bbff",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "id=02e76912f9e2f2e37c2d0d0f16455a157c81e100c3f71d7d20638530c624bbff"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "information_blockchain_and_node_bitcoin",
+			"description": "",
+			"item": [
+				{
+					"name": "Info",
+					"request": {
+						"url": "{{URI}}/info",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Mining",
+					"request": {
+						"url": "{{URI}}/mininginfo",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Blockchain",
+					"request": {
+						"url": "{{URI}}/blockchaininfo",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Peer",
+					"request": {
+						"url": "{{URI}}/peerinfo",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Help",
+					"request": {
+						"url": "{{URI}}/help",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Data : text"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "services_provided",
+			"description": "",
+			"item": [
+				{
+					"name": "Network_hash_ps",
+					"request": {
+						"url": "{{URI}}/networkhashps",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Net_totals",
+					"request": {
+						"url": "{{URI}}/nettotals",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Decode_raw_transaction",
+					"request": {
+						"url": "{{URI}}/decoderawtransaction?hex=e6ba4bacf7916c87942a1123cb60390968ef88504b8a1ea7346ac238f2e2bfc1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Validate_address_mo",
+					"request": {
+						"url": "{{URI}}/validateaddress/12SCEruDBurSABjzeq1kyJD4ghG5vXEjK9/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Validate_address-bo",
+					"request": {
+						"url": "{{URI}}/validateaddress?address=12SCEruDBurSABjzeq1kyJD4ghG5vXEjK9",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "address = 12SCEruDBurSABjzeq1kyJD4ghG5vXEjK9"
+					},
+					"response": []
+				},
+				{
+					"name": "Estimate_fee_mo",
+					"request": {
+						"url": "{{URI}}/estimatefee/20/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Estimate_fee_bo",
+					"request": {
+						"url": "{{URI}}/estimatefee?nblocks=6",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Estimate_priority-mo",
+					"request": {
+						"url": "{{URI}}/estimatepriority/20/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Estimate_priority-bo",
+					"request": {
+						"url": "{{URI}}/estimatepriority?nblocks=20",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Verify_message-bo",
+					"request": {
+						"url": "{{URI}}/verifymessage?bitcoinaddress=12SCEruDBurSABjzeq1kyJD4ghG5vXEjK9&signature=bbeeeggv&message=hello",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Sign_message_with_priv_key-bo",
+					"request": {
+						"url": "{{URI}}/signmessagewithprivkey/?address=17LHaecYMc9682FSG911f2Vk574NmUKUWR/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

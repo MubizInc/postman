@@ -1,0 +1,74 @@
+{
+  "chain": "main",
+  "blocks": 467725,
+  "headers": 467725,
+  "bestblockhash": "000000000000000000cf1e27e88591309a36365bd09b11ec84e11add8d586395",
+  "difficulty": 595921917085.416,
+  "mediantime": 1495531532,
+  "verificationprogress": 0.9999982660813332,
+  "chainwork": "00000000000000000000000000000000000000000058e6a605463297da393d8a",
+  "pruned": false,
+  "softforks": [
+    {
+      "id": "bip34",
+      "version": 2,
+      "enforce": {
+        "status": true,
+        "found": 1000,
+        "required": 750,
+        "window": 1000
+      },
+      "reject": {
+        "status": true,
+        "found": 1000,
+        "required": 950,
+        "window": 1000
+      }
+    },
+    {
+      "id": "bip66",
+      "version": 3,
+      "enforce": {
+        "status": true,
+        "found": 1000,
+        "required": 750,
+        "window": 1000
+      },
+      "reject": {
+        "status": true,
+        "found": 1000,
+        "required": 950,
+        "window": 1000
+      }
+    },
+    {
+      "id": "bip65",
+      "version": 4,
+      "enforce": {
+        "status": true,
+        "found": 1000,
+        "required": 750,
+        "window": 1000
+      },
+      "reject": {
+        "status": true,
+        "found": 1000,
+        "required": 950,
+        "window": 1000
+      }
+    }
+  ],
+  "bip9_softforks": {
+    "csv": {
+      "status": "active",
+      "startTime": 1462060800,
+      "timeout": 1493596800
+    },
+    "segwit": {
+      "status": "started",
+      "bit": 1,
+      "startTime": 1479168000,
+      "timeout": 1510704000
+    }
+  }
+}

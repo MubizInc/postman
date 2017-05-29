@@ -1,0 +1,12 @@
+{
+  "blocks": 467725,
+  "currentblocksize": 0,
+  "currentblockweight": 0,
+  "currentblocktx": 0,
+  "difficulty": 595921917085.416,
+  "errors": "",
+  "networkhashps": 4617349319862131000,
+  "pooledtx": 137375,
+  "testnet": false,
+  "chain": "main"
+}
