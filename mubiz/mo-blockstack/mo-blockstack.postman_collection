@@ -1,0 +1,83 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mubiz-mo-blockstack",
+		"_postman_id": "0e957845-9ceb-be60-bbe9-16eabb3749bf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"request": {
+				"url": "{{URI}}/user/bitcoin/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"url": {
+					"raw": "{{URI}}/?bitcoin",
+					"host": [
+						"{{URI}}"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "bitcoin",
+							"value": "",
+							"equals": false,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Openbazaar_search",
+			"request": {
+				"url": "{{URI}}/openbazaar_search/bitcoin/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Handle_to_guid",
+			"request": {
+				"url": "{{URI}}/handle_to_guid/openbazaar/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Names",
+			"request": {
+				"url": "{{URI}}/names/openbazaar/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
